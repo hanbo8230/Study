@@ -1,7 +1,7 @@
 package day01;
 
 /**
- * Created by éŸ©åš on 2016/8/20.
+ * Created by º«²© on 2016/8/20.
  */
 public class Test {
     public static void main(String[] args) {

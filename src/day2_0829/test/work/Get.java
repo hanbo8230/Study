@@ -1,15 +1,15 @@
 package day2_0829.test.work;
 
 /**
- * Created by éŸ©åš on 2016/8/29.
- * è¦æ±‚:è¯·å†™ä¸€ä¸ªåŠŸèƒ½ï¼Œå®ç°æ±‚ä¸¤ä¸ªintæ•°ä¸­çš„æœ€å¤§å€¼ï¼Œå¹¶æŠŠæœ€å¤§å€¼è¿”å›ï¼Œå¹¶åœ¨mainæ–¹æ³•ä¸­è¿›è¡Œè°ƒç”¨ã€‚
+ * Created by º«²© on 2016/8/29.
+ * ÒªÇó:ÇëĞ´Ò»¸ö¹¦ÄÜ£¬ÊµÏÖÇóÁ½¸öintÊıÖĞµÄ×î´óÖµ£¬²¢°Ñ×î´óÖµ·µ»Ø£¬²¢ÔÚmain·½·¨ÖĞ½øĞĞµ÷ÓÃ¡£
  */
 public class Get {
     public static void main(String[] args) {
         System.out.print(get_max(39,32));
     }
 
-    //è·å–æœ€å¤§å€¼
+    //»ñÈ¡×î´óÖµ
     public static int get_max(int a, int b) {
         int num = 0;
         if (a < b) {

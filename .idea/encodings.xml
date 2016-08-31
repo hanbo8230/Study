@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/day01/Test.java" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/src/day1_4/Atm01.java" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/src/day1_4/GetMath.java" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/src/day1_4/Grade.java" charset="GB2312" />
-    <file url="file://$PROJECT_DIR$/src/day1_4/Grade.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/day1_4/MaoPao.java" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/src/day1_4/Ride.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/Add.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/Out.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/work/Fang.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/work/Get.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/work/MaoPao.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/work/PaiXu.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day2_0829/test/work/RanDom.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/Dog.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/DogTest.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/GirlFriend.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/Teacher.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/TestGirlFriend.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/Test_Teacher.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/XueSheng.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/work/BankAccount.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/work/Manage.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/work/TestBankAccount.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0830/test/work/TestManger.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/Dog.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/Teacher.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/TestTeacher.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/Test_1.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/Test_Dog.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/YuanGong.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/work/BankAccount.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/work/Car.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/work/Computer.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/work/TestBankAccount.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/work/TestCar.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/day8_0831/test/work/TestComputer.java" charset="GB2312" />
   </component>
 </project>
