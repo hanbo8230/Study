@@ -17,9 +17,6 @@ public class BankAccount {
     int year = 1;   //存期
     double rate = 0.01;  //利率
 
-    //输入存款人姓名
-
-
 
     //存款方法
     public void save() {
@@ -33,8 +30,12 @@ public class BankAccount {
     public void fetch() {
         System.out.print("请输入要取的钱款数: ");
         double y = in.nextDouble();
-        balance -= y;
-        System.out.println("您取了: " + y + "元\n您的余额为: " + balance);
+        if (y > balance) {
+            System.out.println("没那么多钱");
+        } else {
+            balance -= y;
+            System.out.println("您取了: " + y + "元\n您的余额为: " + balance);
+        }
     }
 
     //计算存期满后的总金额
