@@ -17,9 +17,7 @@ public class Car {
     public void up_Speed(double speed) {
         if (this.speed + speed < 200) {
             this.speed += speed;
-            if (this.speed <= 200) {
                 System.out.println("当前车速为: " + speed);
-            }
         } else if(this.speed + speed > 200){
             System.out.println("因限速的原因,我发达到每小时"+
                     (this.speed += speed)+"公里,现在时速为每小时200公里");
@@ -37,7 +35,7 @@ public class Car {
 
     public void state() {
         if (this.speed > 0 &&this.speed <= 200) {
-            System.out.print("一辆" + colour + "的" + brand + "以每小时" + speed + "公里奔跑在路上");
+            System.out.print("一辆" + this.colour + "的" + this.brand + "以每小时" + this.speed + "公里奔跑在路上");
         }
     }
 
