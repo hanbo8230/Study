@@ -3,54 +3,35 @@ package day9_0903.work.Pet;
 import java.util.Scanner;
 
 /**
- * Created by éŸ©åš on 2016/9/3.
- * æ€è·¯:åˆ›å»ºä¸€ä¸ªå® ç‰©çˆ¶ç±»,ç±»ä¸­åŒ…æ‹¬å±žæ€§æœ‰   1ç±»åž‹ breed 2 å¥åº·å€¼ health 3äº²å¯†åº¦ conhesion 4 åå­— name
- * éƒ½ä¼šåƒä¸œè¥¿
+ * Created by º«²© on 2016/9/3.
+ * Ë¼Â·:´´½¨Ò»¸ö³èÎï¸¸Àà,ÀàÖÐ°üÀ¨ÊôÐÔÓÐ   1ÀàÐÍ breed 2 ½¡¿µÖµ health 3Ç×ÃÜ¶È conhesion 4 Ãû×Ö name
+ * ¶¼»á³Ô¶«Î÷
  */
 public class Cat extends Pet {
     Scanner in = new Scanner(System.in);
 
-    public Cat(String name) {
-        setType("çŒ«");
-        setName(name);
-    }
 
-    public void go() {
-        xuanBreed();
-        xuanHealth();
-    }
-
-    public void xuanBreed() {
-        System.out.print("è¯·é€‰æ‹©ä½ æƒ³çŒ«çš„å“ç§" +
-                "\n1: é«˜å†·çš„å¸ƒå¶çŒ«" +
-                "\n2: çŠ¯äºŒçš„åŠ è²çŒ«");
+//Ñ¡ÔñÆ·ÖÖ(ÖØÐ´)
+    public void selectBreed() {
+        System.out.print("ÇëÑ¡ÔñÄãÏëÃ¨µÄÆ·ÖÖ" +
+                "\n1: ¸ßÀäµÄ²¼Å¼Ã¨" +
+                "\n2: ·¸¶þµÄ¼Ó·ÆÃ¨");
         int x = in.nextInt();
-        xuanBreed();
-        while (true) {
+
             switch (x) {
                 case 1:
-                    super.setBreed("é«˜å†·çš„å¸ƒå¶çŒ«");
-                    System.out.println("æ‚¨é€‰æ‹©äº†: é«˜å†·çš„å¸ƒå¶çŒ«");
+                    super.setBreed("¸ßÀäµÄ²¼Å¼Ã¨");
+                    System.out.println("ÄúÑ¡ÔñÁË: ¸ßÀäµÄ²¼Å¼Ã¨");
                     break;
                 case 2:
-                    super.setBreed("çŠ¯äºŒçš„åŠ è²çŒ«");
-                    System.out.println("æ‚¨é€‰æ‹©äº†: çŠ¯äºŒçš„åŠ è²çŒ«");
+                    super.setBreed("·¸¶þµÄ¼Ó·ÆÃ¨");
+                    System.out.println("ÄúÑ¡ÔñÁË: ·¸¶þµÄ¼Ó·ÆÃ¨");
                     break;
                 default:
-                    System.out.print("æ‚¨æ²¡æœ‰æ­£æ­£ç¡®çš„é€‰æ‹©,è¯·é‡æ–°é€‰æ‹©");
-                    xuanBreed();
+                    System.out.print("ÄúÃ»ÓÐÕýÕýÈ·µÄÑ¡Ôñ,ÇëÖØÐÂÑ¡Ôñ");
+                    selectBreed();
             }
-        }
+
     }
 
-    public void xuanHealth() {
-        System.out.print("è¯·è¾“å…¥ä½ æƒ³è¦çš„å¥åº·å€¼(1-100),é»˜è®¤æ˜¯60: ");
-        int x = in.nextInt();
-        if (x >= 1 && x <= 100) {
-            super.setHealth(x);
-        } else {
-            System.out.print("æ‚¨çš„è¾“å…¥ä¸åœ¨æœ‰æ•ˆèŒƒå›´å†…,ç³»ç»Ÿé»˜è®¤é€‰æ‹©60");
-            super.setHealth(60);
-        }
-    }
 }

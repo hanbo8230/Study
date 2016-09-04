@@ -1,30 +1,48 @@
 package day9_0903.work.Pet;
 
+import java.util.Scanner;
+
 /**
- * Created by éŸ©åš on 2016/9/3.
- * æ€è·¯:åˆ›å»ºä¸€ä¸ªå® ç‰©çˆ¶ç±»,ç±»ä¸­åŒ…æ‹¬å±žæ€§æœ‰   1ç±»åž‹ breed 2 å¥åº·å€¼ health 3äº²å¯†åº¦ conhesion 4 åå­— name
- * éƒ½ä¼šåƒä¸œè¥¿
+ * Created by º«²© on 2016/9/3.
+ * Ë¼Â·:´´½¨Ò»¸ö³èÎï¸¸Àà,ÀàÖÐ°üÀ¨ÊôÐÔÓÐ   1ÀàÐÍ breed 2 ½¡¿µÖµ health 3Ç×ÃÜ¶È conhesion 4 Ãû×Ö name
+ * ¶¼»á³Ô¶«Î÷
  */
 public class Pet {
     private String name;
     private String breed;
-    private String type;
+    private String tep;
     private int health;
-    private int conhesion;
+    private int conhesion = 99;
+    Scanner in = new Scanner(System.in);
 
-    public Pet() {
 
+    Pet() {
     }
 
+
+////Ñ¡ÔñÆ·ÖÖ
+    public void selectBreed(){
+
+    }
+    //Ñ¡½¡¿µÖµ
+    public void selecHealth() {
+        System.out.println("ÇëÊäÈëÄãÏëÒªµÄ½¡¿µÖµ(1-100),Ä¬ÈÏÊÇ60: ");
+        int x = in.nextInt();
+        if (x >= 1 && x <= 100) {
+            setHealth(x);
+        } else {
+            System.out.println("ÄúµÄÊäÈë²»ÔÚÓÐÐ§·¶Î§ÄÚ,ÏµÍ³Ä¬ÈÏÑ¡Ôñ60");
+            setHealth(60);
+        }
+    }
+
+    //×Ô°×
     public void speak() {
-        System.out.println("æˆ‘çš„åå­—å«: " + name +
-                ",æˆ‘çš„å¥åº·å€¼æ˜¯ " + health +
-                ",æˆ‘ä½•ä¸»äººäº²å¯†åº¦æ˜¯: " + conhesion +
-                ",æˆ‘çš„ç±»åž‹æ˜¯: " + breed);
+        System.out.println("ÎÒµÄÃû×Ö½Ð: " + name +
+                ",ÎÒµÄ½¡¿µÖµÊÇ " + health +
+                ",ÎÒºÍÖ÷ÈËÇ×ÃÜ¶ÈÊÇ: " + conhesion +
+                ",ÎÒµÄÀàÐÍÊÇ: " + breed);
     }
-
-
-
 
     public int getConhesion() {
         return conhesion;
@@ -35,7 +53,6 @@ public class Pet {
     }
 
     public int getHealth() {
-
         return health;
     }
 
@@ -61,11 +78,13 @@ public class Pet {
         this.name = name;
     }
 
-    public String getType() {
-        return type;
+    public String getTep() {
+        return tep;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTep(String tep) {
+        this.tep = tep;
     }
+
+
 }
