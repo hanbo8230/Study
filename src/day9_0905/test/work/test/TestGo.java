@@ -32,11 +32,11 @@ public class TestGo {
         System.out.println("请输入密码: ");
         int miMa = in.nextInt();
 //        Go go = new Go(id, miMa);
-        for (int x = 0; x < 3; x++) {
+        for (int x = 0; x <arr.length; x++) {
             if (arr[x].id.equals(id) && arr[x].miMa == miMa) {
                 System.out.println("成功登录网络");
                 break;
-            } else if (x == 2) {
+            } else if (x == arr.length-1) {
                 System.out.println("输入账号的密码有误,请重新输入");
                 test();
             }
