@@ -36,11 +36,9 @@ public class TestGo {
             if (arr[x].id.equals(id) && arr[x].miMa == miMa) {
                 System.out.println("成功登录网络");
                 break;
-            } else {
-                if (x == 2) {
-                    System.out.println("输入账号的密码有误,请重新输入");
-                    test();
-                }
+            } else if (x == 2) {
+                System.out.println("输入账号的密码有误,请重新输入");
+                test();
             }
         }
     }
