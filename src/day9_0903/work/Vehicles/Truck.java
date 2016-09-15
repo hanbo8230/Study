@@ -28,4 +28,6 @@ public class Truck extends Vehicles{
     public void setLoad(float load) {
         this.load = load;
     }
+
 }
+

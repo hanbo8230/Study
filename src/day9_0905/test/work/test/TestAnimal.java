@@ -26,7 +26,7 @@ public class TestAnimal {
         Animal tiger = new Tiger();
         tiger.eat();
         tiger.sleep();
-
+        //向下转型
         Dog d =(Dog) dog;
         d.kanJia();
 

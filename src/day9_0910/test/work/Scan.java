@@ -7,8 +7,6 @@ import java.util.Scanner;
  * 输入一行字符，分别统计出其中英文字母、空格、数字和其他字符的个数
  */
 public class Scan {
-
-
     public static void main(String[] args) {
         Scan.go();
     }
@@ -19,7 +17,7 @@ public class Scan {
         int b = 0;    //数字个数
         int c = 0;    //空格个数
         int d = 0;    //其他个数
-        System.out.println("请输入一个乱的字符串");
+        System.out.println("请输入一行乱的字符串");
         String num = in.nextLine();
         char[] arr = num.toCharArray();
         //开始进行判断循环

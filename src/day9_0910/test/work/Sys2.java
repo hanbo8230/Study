@@ -10,6 +10,5 @@ public class Sys2 {
     public static void main(String[] args) {
         Calendar a= Calendar.getInstance();
         System.out.println(a.getTime());
-
     }
 }
