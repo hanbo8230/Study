@@ -15,36 +15,56 @@ public class Work_2 {
     public static void go() {
         File f = new File("D:\\dog.jpg");
         File f1 = new File("D:\\dognew.jpg");
-        Reader in = null;
-        Writer os = null;
-        if (f.exists()) {
-            sop("存在");
-            try {
-                in = new FileReader(f);
-                os = new FileWriter(f1);
-                while (true) {
-                    int a = in.read();
-                    if (a == -1) {
-                        break;
-                    } else {
-                        os.write(a);
-                    }
+        InputStream in = null;
+        OutputStream os = null;
+
+        try {
+            in =new FileInputStream(f);
+            os =new FileOutputStream(f1);
+            while (true){
+                int a=in.read();
+                if(a == -1){
+                    break;
+                }else {
+                    os.write(a);
                 }
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    os.close();
-                    in.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+
             }
-        } else {
-            sop("不存在");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
+
+//        if (f.exists()) {
+//            sop("存在");
+//            try {
+//                in = new FileReader(f);
+//                os = new FileWriter(f1);
+//                while (true) {
+//                    int a = in.read();
+//                    if (a == -1) {
+//                        break;
+//                    } else {
+//                        os.write(a);
+//                    }
+//                }
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                try {
+//                    os.close();
+//                    in.close();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        } else {
+//            sop("不存在");
+//        }
     }
 
     public static void sop(Object obj) {
