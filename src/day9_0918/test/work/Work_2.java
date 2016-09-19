@@ -34,6 +34,14 @@ public class Work_2 {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            try {
+                os.close();
+                in.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
 
 
