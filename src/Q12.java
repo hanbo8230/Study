@@ -77,6 +77,7 @@ public class Q12 {
              * */
             String sql = " select * from stu";
             a = st.executeQuery(sql);
+              //st.executeUpdate
             while (a.next()) {
                 String b = a.getString("sid");
                 String c = a.getString("sname");

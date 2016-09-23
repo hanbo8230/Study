@@ -14,14 +14,15 @@ public class Work {
 
     public static void user() {
         //声明变量
-        String driverClassName = "com.mysql.jdbc.Driver";  //JDBC路径
+        String driverClassName = "com.mysql.jdbc.Driver";  //mysql的驱动类名
         String url = "jdbc:mysql://localhost:3306/manage";  //数据库路径
         String username = "root";    //数据库账号
         String password = "root";    //数据库密码
         //加载驱动
         Connection con = null;
         Statement st = null; //声明Statement类 用于执行静态 SQL 语句并返回它所生成结果的对象
-       // ResultSet a = null; //声明ResultSet类 表示数据库结果集的数据表，通常通过执行查询数据库的语句生成。
+        PreparedStatement pst = null;
+        // ResultSet a = null; //声明ResultSet类 表示数据库结果集的数据表，通常通过执行查询数据库的语句生成。
         try {
             Class.forName(driverClassName);
             con = DriverManager.getConnection(url, username, password); //数据库地址
@@ -33,6 +34,15 @@ public class Work {
             st.executeUpdate(user1);
             st.executeUpdate(user2);
             //创建用户完毕
+
+
+            String add = "insert into user values(?,?)";
+
+            pst = con.prepareStatement(add);
+
+            pst.setString(1,"王八犊子");
+            pst.setString(2,"333");
+            pst.executeUpdate(); //执行添加
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
